@@ -1,8 +1,8 @@
 Smiles to Image
 ===============
 [//]: # (Badges)
-[![GitHub Actions Build Status](https://github.com/simonboothroyd/smilestoimg/workflows/ci/badge.svg)](https://github.com/simonboothroyd/smilestoimg/actions?query=branch%3Amaster+workflow%3Aci)
-[![codecov](https://codecov.io/gh/simonboothroyd/smilestoimg/branch/master/graph/badge.svg)](https://codecov.io/gh/simonboothroyd/smilestoimg/branch/master)
+[![GitHub Actions Build Status](https://github.com/simonboothroyd/smilestoimg/workflows/ci/badge.svg)](https://github.com/simonboothroyd/smilestoimg/actions?query=branch%3Amain+workflow%3Aci)
+[![codecov](https://codecov.io/gh/simonboothroyd/smilestoimg/branch/main/graph/badge.svg)](https://codecov.io/gh/simonboothroyd/smilestoimg/branch/main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A RESTful API for converting SMILES patterns into SVG images using RDKit.
