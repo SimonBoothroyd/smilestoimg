@@ -15,4 +15,8 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "smilestoimg"
           heroku_email: "simonb26@yahoo.co.uk"
-          usedocker: true
+          justlogin: true
+      - run: |
+          heroku container:login
+          heroku container:push web
+          heroku container:release web
