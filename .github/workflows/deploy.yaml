@@ -17,6 +17,6 @@ jobs:
           heroku_email: "simonb26@yahoo.co.uk"
           justlogin: true
       - run: |
-          heroku container:login
+          heroku container:login --app smilestoimg
           heroku container:push web
           heroku container:release web
