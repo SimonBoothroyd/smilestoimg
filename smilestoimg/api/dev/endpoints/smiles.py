@@ -1,3 +1,4 @@
+import functools
 import urllib.parse
 
 from fastapi import APIRouter
@@ -8,6 +9,7 @@ from starlette.responses import Response
 router = APIRouter()
 
 
+@functools.lru_cache(100000)
 def smiles_to_image(smiles: str):
 
     smiles_parser = Chem.rdmolfiles.SmilesParserParams()
