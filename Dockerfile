@@ -4,6 +4,9 @@ FROM continuumio/miniconda3
 ADD . /opt/smilestoimg/
 WORKDIR /opt/smilestoimg
 
+# Install the dependencies. The pins are added in attempt to fix permission errors raised on Heroku.
+RUN conda install --yes -c conda-forge "conda ==4.8.2" rdkit fastapi pydantic gunicorn uvicorn
+
 # Install the dependencies.
 RUN conda install --yes -c conda-forge rdkit fastapi pydantic gunicorn uvicorn
 
